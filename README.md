@@ -28,6 +28,6 @@
 - I've pushed this image to my personal docker hub account & kubectl is using that one. `https://hub.docker.com/repository/docker/ahsan75/yotta`
 
 ##### Starting MiniKube
-- `minikube start`
+- `minikube start --nodes 3 -p multinode-yota --driver=none` or to add nodes `minikube node add --help` 
 - `kubectl apply -f app.yml` &  `kubectl apply -f service.yml`
 - `minikube tunnel` to expose external IP Address
